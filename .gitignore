@@ -7,18 +7,41 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node modules and build output
 node_modules
 dist
 dist-ssr
-*.local
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+/auth.json
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
+/.idea
+/.nova
+/.phpunit.cache
+/.fleet
+/.zed
+
+# IDE / system files
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+Thumbs.db
+Homestead.json
+Homestead.yaml
+.phpactor.json
+.phpunit.result.cache
